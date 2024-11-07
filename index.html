@@ -1,26 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Goplani | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="weather-container">
-    <h2>Weather App</h2>
-    <input type="text" id="cityInput" placeholder="Enter city name" />
-    <button onclick="getWeatherByCity()">Get Weather</button>
-    
-    <div id="weatherDetails">
-      <p id="location">Location: --</p>
-      <p class="temperature" id="temperature">Temperature: -- °C</p>
-      <p id="description">Condition: --</p>
-      <p id="humidity">Humidity: --%</p>
-      <p id="wind">Wind Speed: -- m/s</p>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="intro">
+            <h1>Hi, I’m Karan Goplani</h1>
+            <p>A Passionate Web Developer and Software Innovator</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="karan-photo.jpg" alt="Karan Goplani" class="profile-photo">
+        <p>I'm Karan Goplani, a first-year MCA student at Dr. DY Patil School of Science and Technology in Navi Mumbai. I’m passionate about coding, problem-solving, and web development. My goal is to contribute to building innovative solutions through technology. I enjoy learning new languages and frameworks and continuously growing my skill set in web development.</p>
+        <p>Born on July 28, 2003, in Rajkot, Gujarat, India, I have always been curious about technology and how it shapes the world. I aim to combine my technical knowledge with practical experience to build meaningful software solutions.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Frameworks & Libraries</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Figma</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+        <!-- Example Project -->
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Hover over Menu</p>
+            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/karangoplani72/PRODIGY_WD_01" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Stop Watch</p>
+            <p><strong>Tech Stack:</strong> React, Node.js</p>
+            <a href="https://github.com/karangoplani72/PRODIGY_WD_02" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Personal Portfolio</p>
+            <p><strong>Tech Stack:</strong> React, Node.js</p>
+            <a href="https://github.com/karangoplani72/PRODIGY_WD_03" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 4</h3>
+            <p>Weather App</p>
+            <p><strong>Tech Stack:</strong> React, Node.js</p>
+            <a href="https://github.com/karangoplani72/PRODIGY_WD_04" class="btn">View Project</a>
+        </div>
+
+        <!-- Add more project cards similarly -->
     </div>
-  </div>
-  
-  <script src="script.js"></script>
+</section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Web Development Intern | Prodigy InfoTech</h3>
+            <p>September 2024 - Present</p>
+            <ul>
+                <li>Collaborating with the team to develop web applications using JavaScript, HTML, and CSS.</li>
+                <li>Writing clean, maintainable code while ensuring mobile responsiveness and optimization.</li>
+                <li>Contributing to debugging and troubleshooting web applications to improve performance.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Web Development Intern | SkillCraft Technology</h3>
+            <p>September 2024 - Present</p>
+            <ul>
+                <li>Developing user-friendly web pages and interfaces for internal and client projects.</li>
+                <li>Assisting in implementing features and fixing bugs in various web applications.</li>
+                <li>Engaging in post-launch support and maintenance for several web applications.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li><strong>TCS iON Edge Young Professional Certificate</strong> - Gained proficiency in foundational technologies and soft skills for modern careers.</li>
+            <li><strong>Web Development Internship Certificates</strong> - Certificates from Prodigy InfoTech and SkillCraft Technology, showcasing my contributions to web projects.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email or LinkedIn.</p>
+        <ul>
+            <li>Email: <a href="mailto:karangoplani72@gmail.com">karangoplani72@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/karangoplani72">Karan Goplani</a></li>
+            <li>GitHub: <a href="https://github.com/karangoplani72">karangoplani72</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Karan Goplani. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
